@@ -19,4 +19,8 @@ public class Persona {
     public int getEdad(){
         return edad;
     }
+    //Método imprimir detalles de la persona
+    public void imprimirDetalles(){
+        System.out.println("Nombre: " + nombre + " Edad: " + edad);
+    }
 }

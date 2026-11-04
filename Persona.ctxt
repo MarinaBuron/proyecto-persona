@@ -7,4 +7,6 @@ comment2.params=
 comment2.target=java.lang.String\ getNombre()
 comment3.params=
 comment3.target=int\ getEdad()
-numComments=4
+comment4.params=
+comment4.target=void\ imprimirDetalles()
+numComments=5
