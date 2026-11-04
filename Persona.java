@@ -11,16 +11,36 @@ public class Persona {
         nombre = elNombre;
         edad = laEdad;
     }
-    //Método que devuelve el nombre
+    
+    /**
+     * Método que devuelve el nombre
+     */
     public String getNombre(){
         return nombre;
     }
-    //Método que devuelve la edad
+    
+    /**
+     * Método que devuelve la edad
+     */
     public int getEdad(){
         return edad;
     }
-    //Método imprimir detalles de la persona
+    
+    /**
+     * Método que devuelve los detalles del objeto Persona
+     */
     public void imprimirDetalles(){
         System.out.println("Nombre: " + nombre + " Edad: " + edad);
+    }
+    
+    /**
+     * Método que verifica la mayoría de edad
+     */
+    public boolean esMayorDeEdad(){
+        if (edad >= 18){
+            return true;
+        }else{
+            return false;
+        }
     }
 }
