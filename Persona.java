@@ -43,4 +43,11 @@ public class Persona {
             return false;
         }
     }
+    
+    /**
+     * Método cumplir años
+     */
+    public void cumplirAnios(){
+        edad = edad + 1;
+    }
 }
