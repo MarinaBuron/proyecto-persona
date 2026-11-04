@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Persona
+comment1.params=elNombre\ laEdad
+comment1.target=Persona(java.lang.String,\ int)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ Persona\r\n
+numComments=2
