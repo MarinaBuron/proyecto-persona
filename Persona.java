@@ -56,17 +56,15 @@ public class Persona {
      */
     public String obtenerEtapaDeVida(){
         String etapa;
+    
         if (edad >= 65){
             etapa = "Jubilado";
-            return etapa;
         }else if (edad >= 18){
             etapa = "Adulto";
-            return etapa;
-        }else if (edad < 18){
-            etapa = "Menor de edad";
-            return etapa;
+        }else{
+        etapa = "Menor de edad";
         }
-        etapa = "Error";
+        
         return etapa;
     }
 }
