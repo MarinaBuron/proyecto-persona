@@ -56,15 +56,28 @@ public class Persona {
      */
     public String obtenerEtapaDeVida(){
         String etapa;
-    
+        //Comenzamos las condiciones de la edad
         if (edad >= 65){
             etapa = "Jubilado";
         }else if (edad >= 18){
             etapa = "Adulto";
         }else{
-        etapa = "Menor de edad";
+            etapa = "Menor de edad";
         }
-        
         return etapa;
+    }
+    
+    /**
+     * Método de comparación de edades
+     */
+    public void imprimirSiEsMayorQue(int edadAComparar){
+        //Comparando la edad introducida como parámetro
+        if (edadAComparar > edad){
+            System.out.println(nombre + " tiene más de " + edad + " años.");
+        }else if (edadAComparar == edad){
+            System.out.println(nombre + " tiene " + edad + " años."); 
+        }else{
+            System.out.println(nombre + " tiene menos de " + edad + " años.");
+        }
     }
 }
