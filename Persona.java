@@ -72,12 +72,12 @@ public class Persona {
      */
     public void imprimirSiEsMayorQue(int edadAComparar){
         //Comparando la edad introducida como parámetro
-        if (edadAComparar > edad){
-            System.out.println(nombre + " tiene más de " + edad + " años.");
+        if (edadAComparar < edad){
+            System.out.println(nombre + " tiene más de " + edadAComparar + " años.");
         }else if (edadAComparar == edad){
-            System.out.println(nombre + " tiene " + edad + " años."); 
+            System.out.println(nombre + " tiene " + edadAComparar + " años."); 
         }else{
-            System.out.println(nombre + " tiene menos de " + edad + " años.");
+            System.out.println(nombre + " tiene menos de " + edadAComparar + " años.");
         }
     }
 }
