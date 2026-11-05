@@ -50,4 +50,23 @@ public class Persona {
     public void cumplirAnios(){
         edad = edad + 1;
     }
+    
+    /**
+     * Método obtener etapa de vida
+     */
+    public String obtenerEtapaDeVida(){
+        String etapa;
+        if (edad >= 65){
+            etapa = "Jubilado";
+            return etapa;
+        }else if (edad >= 18){
+            etapa = "Adulto";
+            return etapa;
+        }else if (edad < 18){
+            etapa = "Menor de edad";
+            return etapa;
+        }
+        etapa = "Error";
+        return etapa;
+    }
 }
